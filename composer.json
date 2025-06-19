@@ -1,0 +1,21 @@
+{
+  "name": "sceapify/pdf-tools",
+  "description": "A Laravel package to merge PDF files using Python",
+  "type": "library",
+  "autoload": {
+    "psr-4": {
+      "Devloper\\PdfTools\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Devloper\\PdfTools\\PdfToolsServiceProvider"
+      ]
+    }
+  },
+  "require": {
+    "php": "^8.0",
+    "illuminate/support": "^9.0|^10.0"
+  }
+}
