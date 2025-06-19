@@ -4,13 +4,13 @@
   "type": "library",
   "autoload": {
     "psr-4": {
-      "Devloper\\PdfTools\\": "src/"
+      "scrapify\\PdfTools\\": "src/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "Devloper\\PdfTools\\PdfToolsServiceProvider"
+        "scrapify\\PdfTools\\PdfToolsServiceProvider"
       ]
     }
   },
