@@ -1,5 +1,5 @@
 {
-  "name": "sceapify/pdf-tools",
+  "name": "scrapify/pdf-tools",
   "description": "A Laravel package to merge PDF files using Python",
   "type": "library",
   "autoload": {
