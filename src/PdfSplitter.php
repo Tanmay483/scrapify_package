@@ -29,7 +29,7 @@ class PdfSplitter
             mkdir($outputDirectory, 0777, true);
         }
 
-        $pythonScript = base_path('packages/scrapify/pdftools/split_pdf.py');
+        $pythonScript = __DIR__ . '/../split_pdf.py';
         $process = new Process([
             'python',
             $pythonScript,
