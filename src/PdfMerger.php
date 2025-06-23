@@ -37,7 +37,7 @@ class PdfMerger
         $outputFilename = 'merged-' . time() . '.pdf';
         $outputPath = $mergedDir . '/' . $outputFilename;
 
-        $pythonScript = base_path('packages/Scrapify/PdfTools/merge_pdf.py');
+        $pythonScript = __DIR__ . '/../merge_pdf.py';
         $process = new Process(array_merge(['python', $pythonScript, $outputPath], $filePaths));
         $process->run();
 
