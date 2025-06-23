@@ -203,6 +203,16 @@ class ComposerStaticInit215f93f45de0b815067b0506775c91f6
         ),
     );
 
+    public static $prefixesPsr0 = array (
+        'S' => 
+        array (
+            'Smalot\\PdfParser\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/smalot/pdfparser/src',
+            ),
+        ),
+    );
+
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'DateError' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/DateError.php',
@@ -224,6 +234,7 @@ class ComposerStaticInit215f93f45de0b815067b0506775c91f6
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit215f93f45de0b815067b0506775c91f6::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit215f93f45de0b815067b0506775c91f6::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit215f93f45de0b815067b0506775c91f6::$prefixesPsr0;
             $loader->classMap = ComposerStaticInit215f93f45de0b815067b0506775c91f6::$classMap;
 
         }, null, ClassLoader::class);
